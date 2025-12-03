@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Página con background remoto</title>
+  <style>
+    /* Usar una imagen remota como fondo */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      /* Cambiá la URL por la del servidor remoto */
+      background-image: url("https://raw.githubusercontent.com/R3vo-13/Test/refs/heads/main/Defacing.png");
+      background-size: cover;          /* cover, contain, o tamaño fijo */
+      background-position: center;     /* posición de la imagen */
+      background-repeat: no-repeat;    /* evitar repetición */
+      background-attachment: fixed;    /* fijo al viewport (parallax) */
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    }
+
+    .card {
+      background: rgba(0,0,0,0.45);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 820px;
+      width: calc(100% - 40px);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.5);
+    }
+
+    h1 { margin: 0 0 0.5rem 0; font-size: 2rem; }
+    p  { margin: 0; opacity: 0.95; line-height: 1.4; }
+  </style>
+</head>
+<body>
+</body>
+</html>
